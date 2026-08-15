@@ -13,7 +13,20 @@ FROM ghcr.io/containerpak/gtk3:main
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/anki"
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends libnspr4 libnss3 && \
+    apt-get install -y --no-install-recommends \
+        libnspr4 \
+        libnss3 \
+        libxtst6 \
+        libxcb-cursor0 \
+        libxcb-icccm4 \
+        libxcb-image0 \
+        libxcb-keysyms1 \
+        libxcb-render-util0 \
+        libxcb-shape0 \
+        libxcb-util1 \
+        libxcb-xkb1 \
+        libxkbcommon-x11-0 \
+        libxkbfile1 && \
     cpak-clean-junk
 
 COPY --from=source /stage/ /opt/anki/
