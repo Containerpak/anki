@@ -8,7 +8,7 @@ ADD --checksum=sha256:88785a68b0e361ec173ff38410fe0ee4388b2723da0ef1cf0746c5e862
 RUN mkdir -p /stage && \
     tar --zstd -xf /tmp/app.tar.zst -C /stage --strip-components=1
 
-FROM ghcr.io/containerpak/mesa64:main
+FROM ghcr.io/containerpak/gtk3:main
 
 LABEL org.opencontainers.image.source="https://github.com/Containerpak/anki"
 
@@ -18,4 +18,3 @@ COPY anki.desktop /usr/share/applications/anki.desktop
 COPY icon.png /usr/share/icons/hicolor/128x128/apps/anki.png
 
 RUN chmod 0755 /usr/bin/anki && cpak-clean-junk
-
