@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Anki
+Comment=Study with spaced-repetition flash cards.
+Exec=anki %U
+Icon=anki
+Terminal=false
+Categories=Education;
+
