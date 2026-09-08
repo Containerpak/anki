@@ -4,7 +4,7 @@
   "name": "Anki",
   "description": "Study with spaced-repetition flash cards.",
   "version": "26.08.1",
-  "image": "ghcr.io/containerpak/anki@sha256:5db9e08faa96473c0b5054d5540a3c6188ad13badea06e9ede969131afae673f",
+  "image": "ghcr.io/containerpak/anki@sha256:040ae66c49e3787329ea0f4c85346464102c6dea0a9a2c4425924f8342aec8ec",
   "binaries": [
     "/usr/bin/anki"
   ],
