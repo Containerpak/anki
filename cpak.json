@@ -3,7 +3,7 @@
   "manifest_version": "3.0",
   "name": "Anki",
   "description": "Study with spaced-repetition flash cards.",
-  "version": "26.08.1",
+  "version": "26.09",
   "image": "ghcr.io/containerpak/anki@sha256:040ae66c49e3787329ea0f4c85346464102c6dea0a9a2c4425924f8342aec8ec",
   "binaries": [
     "/usr/bin/anki"
